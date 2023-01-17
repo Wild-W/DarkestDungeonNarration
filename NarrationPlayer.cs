@@ -42,8 +42,8 @@ namespace DarkestDungeonNarration
                 }
                 else if (playDefeatOnSpawnIfNoBossActive)
                 {
-                    playDefeatOnSpawnIfNoBossActive = false;
                     ModContent.GetInstance<SoundSystem>().PlayLoseBossFight();
+                    playDefeatOnSpawnIfNoBossActive = false;
                 }
             }
             // Teammate respawns during boss fight

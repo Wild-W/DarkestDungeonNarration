@@ -30,7 +30,7 @@ namespace DarkestDungeonNarration
 
         public override void OnKill(NPC npc)
         {
-            if (!npc.boss || npc.life > 0) return;
+            if (!npc.boss) return;
             
             // Prevent defeat sound from playing because we won, even if some players died at the end
             foreach (Player player in Main.player)
