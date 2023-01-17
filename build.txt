@@ -1,0 +1,3 @@
+displayName = Darkest Dungeon Narration
+author = WildW
+version = 0.1
