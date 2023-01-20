@@ -1,5 +1,4 @@
-﻿using System.Linq;
-using Terraria;
+﻿using Terraria;
 using Terraria.DataStructures;
 using Terraria.ModLoader;
 
@@ -8,7 +7,6 @@ namespace DarkestDungeonNarration
     public class NarrationNPC : GlobalNPC
     {
         public override bool InstancePerEntity => true;
-
         public bool hasReachedHalfHealth = false;
 
         public override void HitEffect(NPC npc, int hitDirection, double damage)
@@ -35,6 +33,7 @@ namespace DarkestDungeonNarration
             // Prevent defeat sound from playing because we won, even if some players died at the end
             foreach (Player player in Main.player)
             {
+                if (!player.active) continue;
                 player.GetModPlayer<NarrationPlayer>().playDefeatOnSpawnIfNoBossActive = false;
             }
         }
