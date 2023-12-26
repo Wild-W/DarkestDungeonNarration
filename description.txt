@@ -3,3 +3,9 @@ This mod adds the ancestor narrator from Darkest Dungeons to Terraria.
 Basically, whenever a boss fight is active: key actions (such as dying, a teammate respawning, healing, defeating the boss) will have random narrations added to them.
 
 You can disable any of the narrations and adjust the volume in the Mod Config.
+
+
+Patch notes:
+
+0.1.1: Fixed bug where boss would not actually count as dead when killed.
+0.1.2: Ported to 1.4.4

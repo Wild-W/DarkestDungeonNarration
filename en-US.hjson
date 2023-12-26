@@ -1,0 +1,64 @@
+Mods: {
+	DarkestDungeonNarration: {
+		NarrationConfig: {
+			Volume: {
+				Label: Volume
+				Tooltip: Volume of the narrator
+			}
+
+			NarratorLines: Narrator Lines
+
+			BossStart: {
+				Label: Boss Start
+				Tooltip: Whether to play boss start sounds
+			}
+
+			BossLowHealth: {
+				Label: Boss Low Health
+				Tooltip: Whether to play boss low health (50% hp) sounds
+			}
+
+			DieDuringBoss: {
+				Label: Die During Boss
+				Tooltip: Whether to play sounds when dying during a boss fight
+			}
+
+			LoseBossFight: {
+				Label: Lose Boss Fight
+				Tooltip: Whether to play sounds when losing a boss fight
+			}
+
+			TeammateDeathDuringBoss: {
+				Label: Teammate Death During Boss
+				Tooltip: Whether to play teammate dies to boss sounds
+			}
+
+			WinAgainstBoss: {
+				Label: Win Against Boss
+				Tooltip: Whether to play sounds when killing a boss
+			}
+
+			HealDuringBoss: {
+				Label: Heal During Boss
+				Tooltip: Whether to play sounds when you heal during a boss fight
+			}
+
+			RespawnInBossFight: {
+				Label: Respawn In Boss Fight
+				Tooltip: Whether to play sounds when you respawn during a boss fight
+			}
+
+			TeammateRespawnDuringBoss: {
+				Label: Teammate Respawn During Boss
+				Tooltip: Whether to play sounds when a teammate respawns during a boss fight
+			}
+		}
+
+		Configs: {
+			NarrationConfig: {
+				DisplayName: Narration Config
+				Headers.General: General Header
+			}
+		}
+	}
+}

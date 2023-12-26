@@ -9,7 +9,7 @@ namespace DarkestDungeonNarration
         public override bool InstancePerEntity => true;
         public bool hasReachedHalfHealth = false;
 
-        public override void HitEffect(NPC npc, int hitDirection, double damage)
+        public override void HitEffect(NPC npc, NPC.HitInfo hit)
         {
             if (!npc.boss) return;
 

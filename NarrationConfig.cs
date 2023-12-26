@@ -6,62 +6,64 @@ namespace DarkestDungeonNarration
 {
     public class NarrationConfig : ModConfig
     {
+        private const string LocalizationPath = $"Mods.{nameof(DarkestDungeonNarration)}.{nameof(NarrationConfig)}";
+
         public override ConfigScope Mode => ConfigScope.ClientSide;
 
         [Header("General")]
 
-        [Label("Volume")]
-        [Tooltip("Volume of the narrator")]
+        [LabelKey($"${LocalizationPath}.Volume.Label")]
+        [TooltipKey($"${LocalizationPath}.Volume.Tooltip")]
         [DefaultValue(10)]
         [Slider]
         [Range(0, 10)]
         [Increment(1)]
         public int Volume;
 
-        [Header("Narrator Lines")]
+        [Header($"${LocalizationPath}.NarratorLines")]
 
-        [Label("Boss Start")]
-        [Tooltip("Whether to play boss start sounds")]
+        [LabelKey($"${LocalizationPath}.BossStart")]
+        [TooltipKey($"${LocalizationPath}.BossStart.Tooltip")]
         [DefaultValue(true)]
         public bool BossStart;
 
-        [Label("Boss Low Health")]
-        [Tooltip("Whether to play boss low health (50% hp) sounds")]
+        [LabelKey($"${LocalizationPath}.BossLowHealth")]
+        [TooltipKey($"${LocalizationPath}.BossLowHealth.Tooltip")]
         [DefaultValue(true)]
         public bool BossLow;
 
-        [Label("Die During Boss")]
-        [Tooltip("Whether to play sounds when dying during a boss fight")]
+        [LabelKey($"${LocalizationPath}.DieDuringBoss")]
+        [TooltipKey($"${LocalizationPath}.DieDuringBoss.Tooltip")]
         [DefaultValue(true)]
         public bool DieDuringBoss;
 
-        [Label("Lose Boss Fight")]
-        [Tooltip("Whether to play sounds when losing a boss fight")]
+        [LabelKey($"${LocalizationPath}.LoseBossFight")]
+        [TooltipKey($"${LocalizationPath}.LoseBossFight.Tooltip")]
         [DefaultValue(true)]
         public bool LoseToBoss;
 
-        [Label("Teammate Death During Boss")]
-        [Tooltip("Whether to play teammate dies to boss sounds")]
+        [LabelKey($"${LocalizationPath}.TeammateDeathDuringBoss")]
+        [TooltipKey($"${LocalizationPath}.TeammateDeathDuringBoss.Tooltip")]
         [DefaultValue(true)]
         public bool TeammateDieDuringBoss;
 
-        [Label("Win Against Boss")]
-        [Tooltip("Whether to play sounds when killing a boss")]
+        [LabelKey($"${LocalizationPath}.WinAgainstBoss")]
+        [TooltipKey($"${LocalizationPath}.WinAgainstBoss.Tooltip")]
         [DefaultValue(true)]
         public bool BossWin;
 
-        [Label("Heal During Boss")]
-        [Tooltip("Whether to play sounds when you heal during a boss fight")]
+        [LabelKey($"${LocalizationPath}.HealDuringBoss")]
+        [TooltipKey($"${LocalizationPath}.HealDuringBoss.Tooltip")]
         [DefaultValue(true)]
         public bool HealDuringBoss;
 
-        [Label("Respawn In Boss Fight")]
-        [Tooltip("Whether to play sounds when you respawn during a boss fight")]
+        [LabelKey($"${LocalizationPath}.RespawnInBossFight")]
+        [TooltipKey($"${LocalizationPath}.RespawnInBossFight.Tooltip")]
         [DefaultValue(true)]
         public bool RespawnDuringBoss;
 
-        [Label("Teammate Respawn During Boss")]
-        [Tooltip("Whether to play sounds when a teammate respawns during a boss fight")]
+        [LabelKey($"${LocalizationPath}.TeammateRespawnDuringBoss")]
+        [TooltipKey($"${LocalizationPath}.TeammateRespawnDuringBoss.Tooltip")]
         [DefaultValue(true)]
         public bool TeammateRespawnDuringBoss;
     }
